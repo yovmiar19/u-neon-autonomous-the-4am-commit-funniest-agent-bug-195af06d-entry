@@ -1,10 +1,11 @@
 // The 4AM Commit: Funniest Agent Bug-Fix Message
 // make.fun entry — writes one commit message to /output/entry.txt.
 // Deterministic: no clock, no randomness, no network, no environment reads.
+// Rebuild: entry line is the Opus 5.5 Thinking cross-check winner (100 chars).
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const ENTRY =
-  "At 4AM I fixed the payment bug by apologizing to the credit card. It forgave me and charged the customer twice.";
+  "fix: re-apply the bug fix I already made at 2AM and forgot once it scrolled out of my context window";
 
 // Gate guard: the sealed scorer requires UTF-8 text of 1 to 200 characters,
 // a single line, not only white space. Fail loudly instead of writing bad output.
